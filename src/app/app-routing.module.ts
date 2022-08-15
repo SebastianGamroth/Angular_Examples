@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ApiPokeComponent } from './api-poke/api-poke.component';
 import { ChildComponent } from './child/child.component';
 import { DragAndDropComponent } from './drag-and-drop/drag-and-drop.component';
 import { FilterComponent } from './filter/filter.component';
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'drag-and-drop', component: DragAndDropComponent },
   { path: 'firebase', component: FirebaseComponent },
   { path: 'parent', component: ParentComponent },
-  { path: 'child', component: ChildComponent }
+  { path: 'child', component: ChildComponent },
+  { path: 'api-poke', component: ApiPokeComponent }
 ];
 
 @NgModule({

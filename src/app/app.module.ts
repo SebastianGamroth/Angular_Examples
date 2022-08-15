@@ -23,15 +23,17 @@ import { UseServiceComponent } from './use-service/use-service.component';
 import { NgformComponent } from './ngform/ngform.component';
 import { DragAndDropComponent } from './drag-and-drop/drag-and-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
-import { provideAuth,getAuth } from '@angular/fire/auth';
-import { provideDatabase,getDatabase } from '@angular/fire/database';
-import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { provideAuth, getAuth } from '@angular/fire/auth';
+import { provideDatabase, getDatabase } from '@angular/fire/database';
+import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { FirebaseComponent } from './firebase/firebase.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
-import {MatGridListModule} from '@angular/material/grid-list';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { ApiPokeComponent } from './api-poke/api-poke.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     DragAndDropComponent,
     FirebaseComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    ApiPokeComponent
 
   ],
   imports: [
@@ -69,7 +72,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
     provideFirestore(() => getFirestore()),
-    MatGridListModule
+    MatGridListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

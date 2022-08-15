@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataColorService } from '../data-color.service';
+import { DataColorService } from '../services/data-color.service';
 
 @Component({
   selector: 'app-use-service',
@@ -7,7 +7,7 @@ import { DataColorService } from '../data-color.service';
   styleUrls: ['./use-service.component.scss']
 })
 export class UseServiceComponent implements OnInit {
-
+  // public service: DataColorService
   constructor(public service: DataColorService) { }
 
   ngOnInit(): void {
