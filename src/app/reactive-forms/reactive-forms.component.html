@@ -1,0 +1,40 @@
+<!-- 
+    import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+    import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+-->
+
+<div class="container">
+
+    <form class="example-form" [formGroup]="getform">
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Name</mat-label>
+            <input formControlName="name" type="text" matInput placeholder="Enter your name" value="">
+            <small *ngIf="name.invalid && name.touched">Name is Required (minimum length 3)</small>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Email</mat-label>
+            <input formControlName="email" type="text" matInput placeholder="Ex. pat@example.com" value="">
+            <small *ngIf="email.invalid && email.touched">Name is Required</small>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Message</mat-label>
+            <textarea formControlName="message" type="text" matInput cols="30" rows="5"
+                placeholder="Enter your message"></textarea>
+            <small *ngIf="getform.get('message').invalid && getform.get('message').touched">Message is Required (minimum
+                length 10)</small>
+        </mat-form-field>
+
+        <div class="example-button-row">
+            <button mat-raised-button [disabled]="getform.invalid" (click)="addInputValue()"
+                color="primary">Add</button>
+        </div>
+
+        <mat-card>{{ outPut['name'] }} {{ outPut['email'] }} {{ outPut['message'] }}
+        </mat-card>
+
+    </form>
+
+</div>

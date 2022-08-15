@@ -1,0 +1,22 @@
+<!-- 
+    import { FormsModule } from '@angular/forms';
+-->
+
+<div class="container">
+
+    <form class="example-form" #bsicForm="ngForm" (click)="getDate(bsicForm.value)">
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Input Name</mat-label>
+            <input ngModel #name name="name" matInput placeholder="text..." value="">
+        </mat-form-field>
+
+        <div class="example-button-row">
+            <button mat-raised-button (click)="name.value=''" color="primary">Add</button>
+        </div>
+
+        <mat-card>{{ giveName.name }}</mat-card>
+
+    </form>
+
+</div>

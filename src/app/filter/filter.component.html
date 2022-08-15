@@ -1,0 +1,21 @@
+<div class="container">
+
+    <div class="collection">
+        <mat-card *ngFor="let all of collectionJSON">{{ all['name'] }}</mat-card>
+    </div>
+
+    <mat-button-toggle-group value="all" name="fontStyle" aria-label="Font Style">
+        <mat-button-toggle (click)="changeFilter('fruit')" value="fruit">Fruit</mat-button-toggle>
+        <mat-button-toggle (click)="changeFilter('vegetables')" value="vegetables">Vegetables</mat-button-toggle>
+        <mat-button-toggle (click)="changeFilter('all')" value="all">All</mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <mat-card class="cardTable">
+        <table>
+            <tr *ngFor="let all of filterArray">
+                <td>{{ all['name'] }}</td>
+            </tr>
+        </table>
+    </mat-card>
+
+</div>

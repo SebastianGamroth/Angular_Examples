@@ -1,0 +1,23 @@
+<!-- 
+    import { FormsModule } from '@angular/forms';
+    [(ngModel)]="getName" and name="name" by using form 
+-->
+
+<div class="container">
+
+    <form class="example-form">
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Input Name</mat-label>
+            <input [(ngModel)]="inputName" name="name" matInput placeholder="text..." value="">
+        </mat-form-field>
+
+        <div class="example-button-row">
+            <button mat-raised-button (click)="addInputValue()" color="primary">Add</button>
+        </div>
+
+        <mat-card>{{ outputName }}</mat-card>
+
+    </form>
+
+</div>
