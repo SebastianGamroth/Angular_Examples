@@ -4,8 +4,12 @@ h3 {
 }
 
 mat-grid-tile {
-    background: rgb(216, 233, 239);
+    // background: rgb(216, 233, 239);
     padding-top: calc(100vh - 64px) !important;
+}
+
+.borderRight{
+    border-right: 1px solid rgb(224, 224, 224);
 }
 
 .grid-content {
