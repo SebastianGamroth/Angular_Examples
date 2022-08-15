@@ -2,6 +2,10 @@ mat-button-toggle-group {
     flex-direction: column;
     width: 100%;
     border: none !important;
+
+    ::ng-deep .mat-button-toggle-label-content {
+        padding: 0px;
+    }
 }
 
 .mat-button-toggle {

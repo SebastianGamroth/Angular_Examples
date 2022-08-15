@@ -1,0 +1,32 @@
+<h3>Child Component</h3>
+
+<!-- input -->
+<mat-card>
+    <mat-label>Item from parent</mat-label>
+    <mat-card>{{item}}</mat-card>
+</mat-card>
+
+
+<!-- output -->
+<!-- <mat-card>
+    <label for="item-input">Add an item:</label>
+    <br>
+    <input type="text" id="item-input" #newItem>
+    <button type="button" (click)="addNewItem(newItem.value)">Add to parent's list</button>
+</mat-card> -->
+
+<mat-card>
+    <mat-label class="tileLabel">Output to parent</mat-label>
+    <form class="example-form">
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Add currentItem</mat-label>
+            <input id="item-input" #newItem matInput placeholder="text..." value="">
+        </mat-form-field>
+
+        <div class="example-button-row">
+            <button mat-raised-button (click)="addNewItem(newItem.value)" color="primary">Add to parent's list</button>
+        </div>
+
+    </form>
+</mat-card>

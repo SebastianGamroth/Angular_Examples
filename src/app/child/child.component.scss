@@ -1,0 +1,23 @@
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+mat-card {
+    margin-bottom: 20px;
+    max-width: 200px;
+    width: 100%;
+    max-height: 145px;
+    height: 100%;
+
+    mat-card {
+        margin-top: 20px;
+        width: unset;
+        height: unset;
+    }
+}
+
+form {
+    margin-top: 20px;
+}

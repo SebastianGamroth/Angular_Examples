@@ -1,0 +1,29 @@
+h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+mat-grid-tile {
+    background: rgb(216, 233, 239);
+    padding-top: calc(100vh - 64px) !important;
+}
+
+.grid-content {
+    display: flex;
+    flex-direction: column;
+}
+
+::ng-deep .mat-grid-tile-content {
+    flex-direction: column;
+    justify-content: unset !important;
+}
+
+mat-card {
+    margin-bottom: 20px;
+    max-width: 200px;
+    width: 100%;
+}
+
+form {
+    margin-top: 18px;
+}

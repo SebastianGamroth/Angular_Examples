@@ -29,6 +29,9 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { FirebaseComponent } from './firebase/firebase.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,9 @@ import { FirebaseComponent } from './firebase/firebase.component';
     UseServiceComponent,
     NgformComponent,
     DragAndDropComponent,
-    FirebaseComponent
+    FirebaseComponent,
+    ParentComponent,
+    ChildComponent
 
   ],
   imports: [
@@ -63,7 +68,8 @@ import { FirebaseComponent } from './firebase/firebase.component';
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
-    provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()),
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

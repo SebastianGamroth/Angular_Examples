@@ -1,0 +1,35 @@
+<mat-grid-list cols="2" rowHeight="1:1">
+
+    <mat-grid-tile>
+        <h3>Parent Component</h3>
+
+        <mat-card>
+            <mat-label class="tileLabel">Input to child</mat-label>
+            <form class="example-form">
+
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Add currentItem</mat-label>
+                    <input [(ngModel)]="currentItem" name="name" matInput placeholder="text..." value="">
+                </mat-form-field>
+
+                <div class="example-button-row">
+                    <button mat-raised-button (click)="addInputValue()" color="primary">Add to child</button>
+                </div>
+
+            </form>
+        </mat-card>
+
+        <!-- output -->
+        <mat-card>
+            <mat-label class="tileLabel">Output from child</mat-label>
+            <ul>
+                <li *ngFor="let item of items">{{item}}</li>
+            </ul>
+        </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+        <app-child [item]="currentItem" (newItemEvent)="addItem($event)"></app-child>
+    </mat-grid-tile>
+
+</mat-grid-list>
