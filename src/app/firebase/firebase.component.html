@@ -1,0 +1,34 @@
+<div class="mainContainer">
+
+    <form class="example-form">
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>First Color</mat-label>
+            <input [(ngModel)]="colorsClass.firstColor" name="name" matInput placeholder="text..." value="">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Second Color</mat-label>
+            <input [(ngModel)]="colorsClass.secondColor" name="name" matInput placeholder="text..." value="">
+        </mat-form-field>
+
+        <div class="example-button-row">
+            <button mat-raised-button (click)=" addColorToDoc()" color="primary">Add</button>
+        </div>
+
+        <mat-card class="cardTable">
+            <table>
+                <tr *ngFor="let doc of colorsArray">
+                    <td>{{ doc.firstColor }} {{ doc.secondColor }}
+                        <div class="example-button-row">
+                            <button mat-raised-button (click)=" deleteOneDoc(doc.id)" color="primary">Del</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </mat-card>
+
+    </form>
+
+
+</div>

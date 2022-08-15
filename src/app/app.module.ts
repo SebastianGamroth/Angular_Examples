@@ -23,6 +23,12 @@ import { UseServiceComponent } from './use-service/use-service.component';
 import { NgformComponent } from './ngform/ngform.component';
 import { DragAndDropComponent } from './drag-and-drop/drag-and-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { FirebaseComponent } from './firebase/firebase.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +41,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     UseModelsComponent,
     UseServiceComponent,
     NgformComponent,
-    DragAndDropComponent
+    DragAndDropComponent,
+    FirebaseComponent
 
   ],
   imports: [
@@ -52,7 +59,11 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatCardModule,
     MatTableModule,
     ReactiveFormsModule,
-    DragDropModule
+    DragDropModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideDatabase(() => getDatabase()),
+    provideFirestore(() => getFirestore())
   ],
   providers: [],
   bootstrap: [AppComponent]
