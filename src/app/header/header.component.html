@@ -2,4 +2,13 @@
 
     <span>Angular Examples</span>
 
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button routerLink="/imprint" mat-menu-item>Impressum</button>
+        <button routerLink="/privacy" mat-menu-item>Datenschutz</button>
+        <button routerLink="/copyright" mat-menu-item>Copyright</button>
+    </mat-menu>
+
 </mat-toolbar>

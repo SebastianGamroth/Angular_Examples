@@ -29,7 +29,7 @@ export class ApiPokeComponent implements OnInit {
       //   console.log(element.name);
       // });
 
-      api.results.forEach(element => {
+      api.results.forEach((element: any) => {
         this.pokemon.push(element.name);
       });
     })

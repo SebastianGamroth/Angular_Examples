@@ -34,6 +34,10 @@ import { ChildComponent } from './child/child.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { ApiPokeComponent } from './api-poke/api-poke.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatMenuModule } from '@angular/material/menu';
+import { CopyrightComponent } from './copyright/copyright.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +54,10 @@ import { HttpClientModule } from '@angular/common/http';
     FirebaseComponent,
     ParentComponent,
     ChildComponent,
-    ApiPokeComponent
+    ApiPokeComponent,
+    CopyrightComponent,
+    ImprintComponent,
+    PrivacyComponent
 
   ],
   imports: [
@@ -73,7 +80,8 @@ import { HttpClientModule } from '@angular/common/http';
     provideDatabase(() => getDatabase()),
     provideFirestore(() => getFirestore()),
     MatGridListModule,
-    HttpClientModule
+    HttpClientModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
