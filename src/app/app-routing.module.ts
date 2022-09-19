@@ -14,6 +14,7 @@ import { PrivacyComponent } from './components/privacy/privacy.component';
 import { ReactiveFormsComponent } from './components/reactive-forms/reactive-forms.component';
 import { UseModelsComponent } from './components/use-models/use-models.component';
 import { UseServiceComponent } from './components/use-service/use-service.component';
+import { VirtualScrollingComponent } from './components/virtual-scrolling/virtual-scrolling.component';
 
 const routes: Routes = [
   { path: 'input-output', component: InputOutputComponent },
@@ -29,7 +30,8 @@ const routes: Routes = [
   { path: 'api-poke', component: ApiPokeComponent },
   { path: 'imprint', component: ImprintComponent },
   { path: 'privacy', component: PrivacyComponent },
-  { path: 'copyright', component: CopyrightComponent }
+  { path: 'copyright', component: CopyrightComponent },
+  { path: 'virtual-scrolling', component: VirtualScrollingComponent }
 ];
 
 @NgModule({

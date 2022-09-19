@@ -38,6 +38,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { CopyrightComponent } from './components/copyright/copyright.component';
 import { ImprintComponent } from './components/imprint/imprint.component';
 import { PrivacyComponent } from './components/privacy/privacy.component';
+import { VirtualScrollingComponent } from './components/virtual-scrolling/virtual-scrolling.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { PrivacyComponent } from './components/privacy/privacy.component';
     ApiPokeComponent,
     CopyrightComponent,
     ImprintComponent,
-    PrivacyComponent
+    PrivacyComponent,
+    VirtualScrollingComponent
 
   ],
   imports: [
