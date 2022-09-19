@@ -1,4 +1,19 @@
-# AngularExamples
+# Angular Examples
+
+This is an example of Angular.
+
+1. Input Output
+2. Filter
+3. Reactive Forms
+4. Models
+5. Service
+6. NgForm
+7. Drag & Drop
+8. Firebase
+9. @Input @Output
+10. API Poke
+
+##
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataColorService } from '../services/data-color.service';
+import { DataColorService } from '../../services/data-color.service';
 
 @Component({
   selector: 'app-use-service',

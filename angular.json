@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-examples": {
+    "Angular_Examples": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -38,8 +38,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "1.10 mb",
-                  "maximumError": "1.10 mb"
+                  "maximumWarning": "1.20 mb",
+                  "maximumError": "1.20 mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -70,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-examples:build:production"
+              "browserTarget": "Angular_Examples:build:production"
             },
             "development": {
-              "browserTarget": "angular-examples:build:development"
+              "browserTarget": "Angular_Examples:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,7 +81,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-examples:build"
+            "browserTarget": "Angular_Examples:build"
           }
         },
         "test": {
@@ -108,7 +108,7 @@
           "options": {
             "prerender": false,
             "ssr": false,
-            "browserTarget": "angular-examples:build:production",
+            "browserTarget": "Angular_Examples:build:production",
             "firebaseProject": "angular-firebase-example-d0a22",
             "firebaseHostingSite": "angular-firebase-example-d0a22"
           }

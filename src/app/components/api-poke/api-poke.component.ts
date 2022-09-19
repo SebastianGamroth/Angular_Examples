@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiPokeService } from '../services/api-poke.service';
+import { ApiPokeService } from 'src/app/services/api-poke.service';
 
 @Component({
   selector: 'app-api-poke',
