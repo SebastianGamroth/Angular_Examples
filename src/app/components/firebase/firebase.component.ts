@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { addDoc, collection, deleteDoc, doc, Firestore, getDocs } from '@angular/fire/firestore';
-import { Colors } from 'src/models/colors.class';
+import { Colors } from 'src/app/models/colors.class';
 
 @Component({
   selector: 'app-firebase',

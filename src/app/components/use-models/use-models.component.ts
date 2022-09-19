@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Animals } from 'src/models/animals.class';
+import { Animals } from 'src/app/models/animals.class';
 
 @Component({
   selector: 'app-use-models',
