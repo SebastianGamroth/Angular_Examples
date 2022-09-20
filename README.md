@@ -12,6 +12,7 @@ This is an example of Angular.
 8. Firebase
 9. @Input @Output
 10. API Poke
+11. Virtual Scrolling (cdkScrollable)
 
 ##
 

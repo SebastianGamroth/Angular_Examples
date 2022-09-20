@@ -1,10 +1,11 @@
 * {
+    margin-top: 20;
     box-sizing: border-box;
 }
 
 :host {
-    width: 300px;
-    min-height: 100%;
+    width: 400px;
+    height: calc(100vh - 104px);
     display: flex;
 
     .list {
@@ -24,8 +25,12 @@
             border-radius: 2px;
             transition: all 124ms;
 
+            &.odd {
+                background-color: #f1f1f1;
+            }
+
             &:hover {
-                background-color: #f5f5f5;
+                background-color: #ececec;
 
                 .col {
                     transform: translate(10px, 0);

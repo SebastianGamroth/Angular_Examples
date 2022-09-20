@@ -10,7 +10,7 @@ import { Observable, of } from 'rxjs';
 })
 export class VirtualScrollingComponent {
 
-  public fakeData: Observable<Person[]> = this._generatePersonData(30);
+  public fakeData: Observable<Person[]> = this._generatePersonData(30000);
 
   private _generatePersonData(count: number): Observable<Person[]> {
     const array: Person[] = [];

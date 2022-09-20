@@ -39,6 +39,7 @@ import { CopyrightComponent } from './components/copyright/copyright.component';
 import { ImprintComponent } from './components/imprint/imprint.component';
 import { PrivacyComponent } from './components/privacy/privacy.component';
 import { VirtualScrollingComponent } from './components/virtual-scrolling/virtual-scrolling.component';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -83,7 +84,8 @@ import { VirtualScrollingComponent } from './components/virtual-scrolling/virtua
     provideFirestore(() => getFirestore()),
     MatGridListModule,
     HttpClientModule,
-    MatMenuModule
+    MatMenuModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
