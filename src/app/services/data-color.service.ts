@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class DataColorService {
 
   drawler: boolean = true;
+  menuTitle: string = 'Input Output';
 
   public oldColors: any[] = [
     {
@@ -45,5 +46,7 @@ export class DataColorService {
     this.drawler = !this.drawler;
     return this.drawler;
   }
+
+
 
 }
