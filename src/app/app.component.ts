@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataColorService } from './services/data-color.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-examples';
+
+  constructor(public service: DataColorService) { }
 }

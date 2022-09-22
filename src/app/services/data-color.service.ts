@@ -5,6 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class DataColorService {
 
+  drawler: boolean = false;
+
   public oldColors: any[] = [
     {
       'first': ['blue'],
@@ -38,4 +40,10 @@ export class DataColorService {
     let x: number = a + b;
     return x;
   }
+
+  drawerMenu() {
+    this.drawler = !this.drawler;
+    return this.drawler;
+  }
+
 }
