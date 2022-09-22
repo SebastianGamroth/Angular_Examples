@@ -12,6 +12,7 @@ import { NgformComponent } from './components/ngform/ngform.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { PrivacyComponent } from './components/privacy/privacy.component';
 import { ReactiveFormsComponent } from './components/reactive-forms/reactive-forms.component';
+import { TrackbyfnComponent } from './components/trackbyfn/trackbyfn.component';
 import { UseModelsComponent } from './components/use-models/use-models.component';
 import { UseServiceComponent } from './components/use-service/use-service.component';
 import { VirtualScrollingComponent } from './components/virtual-scrolling/virtual-scrolling.component';
@@ -31,7 +32,8 @@ const routes: Routes = [
   { path: 'imprint', component: ImprintComponent },
   { path: 'privacy', component: PrivacyComponent },
   { path: 'copyright', component: CopyrightComponent },
-  { path: 'virtual-scrolling', component: VirtualScrollingComponent }
+  { path: 'virtual-scrolling', component: VirtualScrollingComponent },
+  { path: 'trackbyfn', component: TrackbyfnComponent }
 ];
 
 @NgModule({

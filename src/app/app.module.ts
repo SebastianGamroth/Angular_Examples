@@ -40,6 +40,7 @@ import { ImprintComponent } from './components/imprint/imprint.component';
 import { PrivacyComponent } from './components/privacy/privacy.component';
 import { VirtualScrollingComponent } from './components/virtual-scrolling/virtual-scrolling.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { TrackbyfnComponent } from './components/trackbyfn/trackbyfn.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     CopyrightComponent,
     ImprintComponent,
     PrivacyComponent,
-    VirtualScrollingComponent
+    VirtualScrollingComponent,
+    TrackbyfnComponent
 
   ],
   imports: [

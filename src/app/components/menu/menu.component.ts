@@ -19,7 +19,8 @@ export class MenuComponent implements OnInit {
     'Firebase',
     '@Input @Output',
     'API Poke',
-    'Virtual Scrolling'
+    'Virtual Scrolling',
+    'Track by Function'
   ];
 
   constructor(public service: DataColorService) { }

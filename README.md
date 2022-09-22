@@ -13,6 +13,7 @@ This is an example of Angular.
 9. @Input @Output
 10. API Poke
 11. Virtual Scrolling (cdkScrollable)
+12. Track by Function
 
 ##
 
