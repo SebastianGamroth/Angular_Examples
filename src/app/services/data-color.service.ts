@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class DataColorService {
 
-  drawler: boolean = false;
+  drawler: boolean = true;
 
   public oldColors: any[] = [
     {

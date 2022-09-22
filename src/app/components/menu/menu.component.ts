@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  menuArray: any = ['Input Output', 'Filter'];
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  menuTitle(value:any ) {
+    console.log(value)
   }
 
 }
